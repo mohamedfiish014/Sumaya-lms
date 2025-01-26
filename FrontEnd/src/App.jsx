@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes, Route} from "react-router-dom"
 import Home from "./Pages/Home"
 import Dashboard from "./Pages/Dashboard"
-import Contact from "./Pages/Contact"
+import Contact from "./Pages/ContactUs"
 import CreateAccount from './Pages/CreateAccount'
 import Login from './Pages/Login'
 
