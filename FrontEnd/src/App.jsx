@@ -5,6 +5,7 @@ import Dashboard from "./Pages/Dashboard"
 import Contact from "./Pages/ContactUs"
 import CreateAccount from './Pages/CreateAccount'
 import Login from './Pages/Login'
+import SideNav from './Components/SideNav'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Route path='/dashboard' element={<Dashboard/>} />
     <Route path='/createaccount' element={<CreateAccount/>} />
     <Route path='/login' element={<Login/>} />
+    <Route path='/sidenav' element={<SideNav/>} />
         
     </Routes>  
     </div>
