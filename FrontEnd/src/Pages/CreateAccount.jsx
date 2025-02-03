@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import HeaderLogo from "../images/HeaderLogo.svg"
 
 const CreateAccount = () => {
   const [formData, setFormData] = useState({
@@ -24,8 +25,9 @@ const CreateAccount = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
+    <div className="flex items-center justify-center min-h-screen bg-gray-200">
+      <div className="w-full max-w-md p-6 bg-white rounded-md shadow-lg border-t border-b border-[#164da8] ">
+      <img src={HeaderLogo} alt="" className="w-[50px] h-[50px] ml-[180px] " />
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-6">Create Account</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="relative">
@@ -36,7 +38,7 @@ const CreateAccount = () => {
               placeholder="Full Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full pl-10 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="border-b outline-none w-full pl-10 p-3   "
               required
             />
           </div>
@@ -48,7 +50,7 @@ const CreateAccount = () => {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full pl-10 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="border-b outline-none w-full pl-10 p-3 "
               required
             />
           </div>
@@ -60,7 +62,7 @@ const CreateAccount = () => {
               placeholder="Password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full pl-10 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="border-b outline-none w-full pl-10 p-3 "
               required
             />
           </div>
@@ -72,13 +74,13 @@ const CreateAccount = () => {
               placeholder="Confirm Password"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="w-full pl-10 p-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="w-full pl-10 p-3 border-b outline-none"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition"
+            className="w-full bg-[#164da8] cursor-pointer text-white p-3 rounded-lg hover:bg-blue-600 transition"
           >
             Create Account
           </button>

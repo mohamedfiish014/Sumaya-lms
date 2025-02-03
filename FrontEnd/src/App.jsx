@@ -6,6 +6,14 @@ import Contact from "./Pages/ContactUs"
 import CreateAccount from './Pages/CreateAccount'
 import Login from './Pages/Login'
 import SideNav from './Components/SideNav'
+import CourseDescriptionOne from './Pages/CourseDescriptionOne'
+import CourseDescriptionFour from './Pages/CourseDescriptionFour'
+import CourseDescriptionTwo from './Pages/CourseDescriptionTwo'
+import CourseDescriptionThree from './Pages/CourseDescriptionThree'
+import ShowAllCourses from './Pages/ShowAllCourses'
+import AllTeachers from './Pages/Dashboard/AllTeachers'
+import CartPage from './Pages/CartPage'
+// import ShowAllCourseDesc1 from './Pages/ShowAllCoursses/ShowAllCourseDesc1'
 
 const App = () => {
   return (
@@ -18,6 +26,13 @@ const App = () => {
     <Route path='/createaccount' element={<CreateAccount/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/sidenav' element={<SideNav/>} />
+    <Route path='/coursdescriptionone' element={<CourseDescriptionOne/>} />
+    <Route path='/coursdescriptionfour' element={<CourseDescriptionFour/>} />
+    <Route path='/coursdescriptiontwo' element={<CourseDescriptionTwo/>} />
+    <Route path='/coursdescriptionthree' element={<CourseDescriptionThree/>} />
+    <Route path='/showallcourses' element={<ShowAllCourses/>} />
+    <Route path='/allteachers' element={<AllTeachers/>} />
+    <Route path='/cartpage' element={<CartPage/>} />
         
     </Routes>  
     </div>
