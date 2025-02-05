@@ -6,7 +6,7 @@ const Header = () => {
 
 
   return (
-    <div className=' w-full h-[70px] fixed z-50 bg-linear-to-r/decreasing from-[#164da8] to-[#000000] border-b-1 border-white flex justify-between items-center px-10'>
+    <div className=' w-full h-[70px] fixed z-50 bg-linear-to-r/decreasing from-[#164da8] to-[#000000] border-b-1 border-white flex justify-between items-center px-10 '>
       
       <div className='flex gap-[80px] items-center'>
       <div className='flex gap-4 items-center'>
