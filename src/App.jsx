@@ -16,6 +16,10 @@ import CartPage from './Pages/CartPage'
 import AddStudent from './Pages/Dashboard/Students/AddStudent'
 import AllStudents from './Pages/Dashboard/Students/AllStudents'
 import AddCourse from './Pages/ShowAllCoursses/AddCourse'
+import Faq from './Pages/Faq'
+import SlidesImage from './Pages/SlidesImage'
+import AddTeacher from './Pages/Dashboard/Teacher/AddTeacher'
+import Admin from './Pages/Dashboard/Admin/Admin'
 // import ShowAllCourseDesc1 from './Pages/ShowAllCoursses/ShowAllCourseDesc1'
 
 const App = () => {
@@ -39,6 +43,10 @@ const App = () => {
     <Route path='/add' element={<AddStudent/>} />
     <Route path='/all' element={<AllStudents/>} />
     <Route path='/courses' element={<AddCourse/>} />
+    <Route path='/faq' element={<Faq/>} />
+    <Route path='/slides' element={<SlidesImage/>} />
+    <Route path='/addteacher' element={<AddTeacher/>} />
+    <Route path='/admin' element={<Admin/>} />
         
     </Routes>  
     </div>

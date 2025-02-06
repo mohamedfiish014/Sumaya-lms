@@ -4,6 +4,8 @@ import ForexImageOne from "../images/ForexImageOne.jpg"
 import TestManOne from "../images/TestManOne.jpg"
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
+import Faq from './Faq'
+import SlidesImage from './SlidesImage'
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -244,15 +246,15 @@ community to help you achieve your personal and professional goals.</p>
       </div>
 
       </div>
+      <SlidesImage/>
       
-      
-
+<Faq/>
       
 <Footer/>
 
       </div>
     
-  )
+  ) 
 }
 
 export default Home

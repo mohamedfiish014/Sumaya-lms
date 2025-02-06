@@ -45,7 +45,7 @@ const SideNav = () => {
           {/* Teachers */}
           <div className='border-b border-white'>
             <p className="text-xl text-white font-bold">Teachers</p>
-            <Link to="/teachers/add" className="flex items-center text-lg text-white hover:text-gray-900 hover:bg-gray-200 rounded-lg p-3">
+            <Link to="/addteacher" className="flex items-center text-lg text-white hover:text-gray-900 hover:bg-gray-200 rounded-lg p-3">
               <FaChalkboardTeacher className="mr-4 text-xl" />
               Add Teacher
             </Link>
@@ -58,7 +58,7 @@ const SideNav = () => {
           {/* Users */}
           <div className='border-b border-white'>
             <p className="text-sm text-white font-semibold">Users</p>
-            <Link to="/users/admin" className="flex items-center text-lg text-white hover:text-gray-900 hover:bg-gray-200 rounded-lg p-3">
+            <Link to="/admin" className="flex items-center text-lg text-white hover:text-gray-900 hover:bg-gray-200 rounded-lg p-3">
               <FaUserShield className="mr-4 text-xl" />
               Admin
             </Link>
