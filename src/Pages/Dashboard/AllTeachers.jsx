@@ -1,58 +1,48 @@
-import React from 'react'
-// import Dashboard from "../Dashboard"
-import SideNav from '../../Components/SideNav'
-import DasboardHeader from './DasboardHeader'
-import DataTable from "react-data-table-component"
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { AiOutlineIdcard, AiOutlineUser } from "react-icons/ai";
+import { MdLocationCity } from "react-icons/md";
+import { useState } from "react";
+import SideNav from "../../Components/SideNav";
 
-const AllTeachers = () => {
-
-    const data = [
-        { id: 1, name: "Cambuulo", age: 25, city: "New York" },
-        { id: 2, name: "Bob", age: 30, city: "Los Angeles" },
-        { id: 3, name: "Charlie", age: 28, city: "Chicago" },
-      ];
+const AllTeacher = () => {
+  const [teachers, setTeachers] = useState([
+    { id: 1, name: "John Doe", age: 35, city: "New York" },
+    { id: 2, name: "Jane Smith", age: 40, city: "Los Angeles" },
+    { id: 3, name: "Robert Brown", age: 45, city: "Chicago" },
+  ]);
 
   return (
     <div>
-    <div className=' bg-fixed'>
-<DasboardHeader/>
-      <SideNav/>
-    </div>
-
-      <div className='bg-gray-200 w-full h-screen mt-0 '>
-
-<div>
-
-      <div className='bg-white rounded-lg w-[1040px] h-[490px] shadow-2xl ml-[215px] absolute top-[60px]  '>
-
-      <table className='items-center' border="1" style={{ width: "100%", textAlign: "left" }}>
-      <thead className=''>
-        <tr className='bg-black text-white'>
-          <th className='bg-red-500'>ID</th>
-          <th>Name</th>
-          <th>Age</th>
-          <th>City</th>
-        </tr>
-      </thead>
-      <tbody className='bg-gray-200'>
-        {data.map((item) => (
-          <tr className='' key={item.id}>
-            <td className=''>{item.id}</td>
-            <td>{item.name}</td>
-            <td>{item.age}</td>
-            <td>{item.city}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-
-</div>
-      </div>
-
+<SideNav/>
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 p-6">
+      <h2 className="text-3xl font-bold text-gray-700 flex items-center gap-2 mb-6">
+        <FaChalkboardTeacher className="text-blue-500" /> All Teachers
+      </h2>
+      <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
+        <table className="w-full border-collapse shadow-md rounded-lg overflow-hidden">
+          <thead>
+            <tr className="bg-blue-500 text-white">
+              <th className="p-3 text-left"> <AiOutlineIdcard className="inline" /> ID</th>
+              <th className="p-3 text-left"> <AiOutlineUser className="inline" /> Name</th>
+              <th className="p-3 text-left">Age</th>
+              <th className="p-3 text-left"> <MdLocationCity className="inline" /> City</th>
+            </tr>
+          </thead>
+          <tbody>
+            {teachers.map((teacher, index) => (
+              <tr key={teacher.id} className={`border-b text-left ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+                <td className="p-3">{teacher.id}</td>
+                <td className="p-3">{teacher.name}</td>
+                <td className="p-3">{teacher.age}</td>
+                <td className="p-3">{teacher.city}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
-  )
-}
+    </div>
+  );
+};
 
-export default AllTeachers
-
+export default AllTeacher;

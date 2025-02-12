@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaUser, FaBook, FaCalendarAlt, FaInfoCircle, FaChalkboardTeacher, FaPlus } from 'react-icons/fa';
+import SideNav from '../../../Components/SideNav';
 
 const AddTeacher = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +21,9 @@ const AddTeacher = () => {
   };
 
   return (
+    <div>
+<SideNav/>
+
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
         <div className="p-6">
@@ -74,7 +78,7 @@ const AddTeacher = () => {
                     onChange={handleChange}
                     placeholder="Years of experience"
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300"
-                  />
+                    />
                 </div>
               </div>
             </div>
@@ -109,6 +113,7 @@ const AddTeacher = () => {
         </div>
       </div>
     </div>
+                    </div>
   );
 };
 

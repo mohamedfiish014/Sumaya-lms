@@ -1,4 +1,5 @@
 import { FaEdit, FaTrash, FaUserGraduate } from 'react-icons/fa';
+import SideNav from '../../../Components/SideNav';
 
 const students = [
   { id: 1, name: 'John Doe', email: 'john@example.com', course: 'Computer Science' },
@@ -8,7 +9,10 @@ const students = [
 
 const AllStudents = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-8 px-4">
+    <div>
+<SideNav/>
+
+    <div className="min-h-screen bg-gray-100 py-8 px-4 ml-[12%]">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
@@ -61,6 +65,7 @@ const AllStudents = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

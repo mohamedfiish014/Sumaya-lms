@@ -1,10 +1,75 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo+Play:wght@200..1000&family=El+Messiri:wght@400..700&family=Fustat:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* Importing TailwindCSS */
 @import "tailwindcss";
 
-*{
-    font-family: "Montserrat", serif;
+/* Global Styles */
+* {
+  font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+/* Dark mode styles */
+html {
+  background-color: white;
+  color: black;
+}
+
+html.dark {
+  background-color: #1a202c; /* Dark background */
+  color: white; /* Light text for dark mode */
+}
+
+/* Dark background for body */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #2d3748; /* Dark background for the body */
+}
+
+/* Example custom dark mode styles for other elements */
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.dark {
+  background-color: #4a5568;
+  color: white;
+}
+
+/* Tailwind dark mode for specific elements */
+.bg-dark {
+  background-color: #2d3748; /* Dark background */
+}
+
+.text-dark {
+  color: white; /* Light text */
+}
+
+.text-light {
+  color: black; /* Dark text */
+}
+
+/* Example dark mode for headers and sections */
+h1, h2, h3 {
+  transition: color 0.3s ease;
+}
+
+h1.dark, h2.dark, h3.dark {
+  color: white; /* Light-colored headers for dark mode */
+}
+
+/* If you have any cards or containers, you can style them as well */
+.card {
+  transition: background-color 0.3s ease;
+}
+
+.card.dark {
+  background-color: #4a5568; /* Dark background for cards */
+  color: white;
 }

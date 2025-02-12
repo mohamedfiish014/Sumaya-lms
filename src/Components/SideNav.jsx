@@ -64,7 +64,7 @@ const SideNav = () => {
             </Link>
             <Link to="/users" className="flex items-center text-lg text-white hover:text-gray-900 hover:bg-gray-200 rounded-lg p-3">
               <FaUserAlt className="mr-4 text-2xl" />
-              User
+              Users
             </Link>
           </div>
         </div>

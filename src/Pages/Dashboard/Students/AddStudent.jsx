@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaUser, FaEnvelope, FaBook, FaSave } from 'react-icons/fa';
+import SideNav from '../../../Components/SideNav';
 
 const AddStudent = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,10 @@ const AddStudent = () => {
   };
 
   return (
+    <div>
+
+<SideNav/>
+
     <div className="min-h-screen bg-gray-100 py-8 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
@@ -77,6 +82,7 @@ const AddStudent = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };
